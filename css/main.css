@@ -1,0 +1,9 @@
+body {
+  font-family: "Roboto", serif;
+  font-weight: 400; /* of 500 (medium)*/
+}
+
+h1 {
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 700;
+}
