@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,17 +19,60 @@
     <link rel="stylesheet" href="static/css/main.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#">Agenda</a>
-        <a href="#">Historiek</a>
-        <a href="#">Bezoek</a>
-        <a href="#">Over het STAM</a>
-      </nav>
-      <p>koop tickets</p>
-      <p>nl</p>
-      <img src="static/images/Iconen en logos/logo.svg" alt="Logo" />
+    <header class="d-header">
+      <div class="frame-3">
+        <nav>
+          <a href="#">
+            Agenda
+            <img
+              src="static/images/Iconen en logos/arrow-corner-bottom.svg"
+              alt="Agenda Icon"
+              class="nav-list__item"
+            />
+          </a>
+          <a href="#">
+            Historiek
+            <img
+              src="static/images/Iconen en logos/arrow-corner-bottom.svg"
+              alt="Historiek Icon"
+              class="nav-list__item"
+            />
+          </a>
+          <a href="#">
+            Bezoek
+            <img
+              src="static/images/Iconen en logos/arrow-corner-bottom.svg"
+              alt="Bezoek Icon"
+              class="nav-list__item"
+            />
+          </a>
+          <a href="#">
+            Over het STAM
+            <img
+              src="static/images/Iconen en logos/arrow-corner-bottom.svg"
+              alt="Over STAM Icon"
+              class="nav-list__item"
+            />
+          </a>
+        </nav>
+        <div class="actions">
+          <button class="button-buy-tickets">koop tickets</button>
+          <button class="button-language">nl</button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="static/images/Iconen en logos/logo-vlak.svg"
+          alt="Logo"
+          class="stam-logo"
+        />
+      </div>
     </header>
+    <img
+    src="static/images/Iconen en logos/erfgoedcel-logo.svg"
+    alt="erfgoedcel"
+    class="erfgoedcel-logo"
+  />
     <img src="static/images/homepage_homepagefront.png" alt="Homepagefront" />
     <img
       src="static/images/Iconen en logos/stadsmuseum-gent.svg"
@@ -53,11 +96,14 @@
         src="static/images/events_tentoonstellingen_Marcus-Haenebalcke.png"
         alt="Marcus Haenebalcke"
       />
-      <img src="static/images/Iconen en logos/..." alt="Wordt Verwacht Logo" />
+      <img
+        src="static/images/Iconen en logos/label_2-nl-be.svg"
+        alt="Wordt Verwacht Logo"
+      />
       <h3>De Poorten - Op ‘t randje van de stad</h3>
       <p>29.11.2024</p>
       <img
-        src="static/images/Iconen en logos/arrow-corner-right.svg"
+        src="static/images/Iconen en logos/arrow-corner-bottom.svg"
         alt="Arrow bottom right"
       />
       <p>31.08.2025</p>
@@ -90,7 +136,7 @@
     <section class="cards">
       <!-- card #1 -->
       <div class="card">
-        <img src="static/images/Iconen en logos/vlieg.svg" alt="vlieg" />
+        <img src="static/images/Iconen en logos/vl" alt="vlieg" />
         <img
           src="static/images/events_activiteiten_familiehoek-Martin-Corlazzoli.png"
           alt="Martin Corlazzoli"
@@ -136,7 +182,7 @@
         <h3>Wie bewaart, die blijft! Koru ve yaşat!.</h3>
         <p>21.04.2024</p>
         <img
-          src="static/images/Iconen en logos/arrow-corner-right.svg"
+          src="static/images/Iconen en logos/arrow-corner-bottom.svg"
           alt="Arrow bottom right"
         />
         <p>30.12.2024</p>
@@ -158,7 +204,7 @@
         <h3>STAMplein: De vierkante kilometer - Dampoort</h3>
         <p>03.05.2024</p>
         <img
-          src="static/images/Iconen en logos/arrow-corner-right.svg"
+          src="static/images/Iconen en logos/arrow-corner-bottom.svg"
           alt="Arrow bottom right"
         />
         <p>09.03.2025</p>
@@ -171,11 +217,51 @@
       </div>
     </section>
 
-    <footer class="top">
+    <footer class="footer-top">
+      <img src="static/images/Iconen en logos/logo.svg" alt="Logo" />
+      <div class="footer-section">
+        <h3>Stadsmuseum Gent</h3>
+        <p>
+          BijlokesiteGodshuizenlaan 2 - 9000 Gent09 267 14 00info@stamgent.be
+        </p>
+        <img
+          src="static/images/partners_Vlaanderen_verbeelding-werkt.png"
+          alt="Vlaanderen"
+        />
+        <img src="static/images/partners_logo_gent.png" alt="Gent" />
+      </div>
 
+      <div class="footer-section">
+        <h3>mis geen nieuwtjes</h3>
+        <div class="nieuwsbrief"><p>Schrijf je in op de nieuwsbrief</p></div>
+        <img src="static/images/Iconen en logos/facebook.svg" alt="facebook" />
+        <img src="static/images/Iconen en logos/twitter.svg" alt="twitter" />
+        <img
+          src="static/images/Iconen en logos/instagram.svg"
+          alt="instagram"
+        />
+        <img src="static/images/Iconen en logos/youtube.svg" alt="youtube" />
+        <img src="static/images/Iconen en logos/linkedin.svg" alt="linkedin" />
+        <a href="#">Nederlands</a>
+        <a href="#">Français</a>
+        <a href="#">English</a>
+      </div>
     </footer>
-    <footer class="bottom">
-      
+
+    <footer class="footer-bottom">
+      <p>&copy;STAM alle rechten voorbehouden</p>
+      <div>
+        <li>Privacybeleid</li>
+        <li>Colofon</li>
+        <li>Disclaimer</li>
+        <li>Algemene voorwaarden & bewaking</li>
+      </div>
+      <img
+        src="static/images/Iconen en logos/erfgoedcel-logo.svg"
+        alt="Erfgoedcel-logo"
+      />
+      <p>made by</p>
+      <img src="static/images/Iconen en logos/glue.svg" alt="glue" />
     </footer>
     <script src="static/js/main.js"></script>
   </body>

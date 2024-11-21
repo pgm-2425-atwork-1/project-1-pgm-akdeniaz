@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&family=Roboto:wght@400;500&display=swap");
+
 body {
   font-family: "Roboto", serif;
   font-weight: 400; /* of 500 (medium)*/
@@ -6,4 +8,87 @@ body {
 h1 {
   font-family: "Albert Sans", sans-serif;
   font-weight: 700;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #008855;
+  color: white;
+}
+
+nav {
+  display: flex;
+  padding-left: 2rem;
+  gap: 20px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  gap: 5px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list__item {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+button {
+  text-transform: uppercase;
+  height: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.button-buy-tickets {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.button-language {
+  background-color: #545454;
+  color: white;
+}
+
+.button-buy-tickets,
+.button-language {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.logo-container {
+  position: relative;
+}
+
+.stam-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.erfgoedcel-logo {
+  position: absolute;
+  top: 10rem;
+  right: 0;
+  color: white;
 }
