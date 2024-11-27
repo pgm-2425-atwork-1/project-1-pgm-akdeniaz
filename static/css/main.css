@@ -1,83 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&family=Roboto:wght@400;500&display=swap");
 
+h1,
+h2,
+h3 {
+  font-family: "Albert Sans", sans-serif;
+}
+
 body {
   font-family: "Roboto", serif;
+  line-height: 4;
   font-weight: 400; /* of 500 (medium)*/
 }
 
-h1 {
-  font-family: "Albert Sans", sans-serif;
-  font-weight: 700;
-}
-
-header {
+.d-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
+  flex: 1 0 0;
+  max-width: 100vw;
+  height: 5.875rem;
+  padding: 0 1.5rem;
   background-color: #008855;
   color: white;
 }
 
+.frame-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 nav {
   display: flex;
-  padding-left: 2rem;
-  gap: 20px;
+  gap: 2.5rem;
 }
 
-a {
+nav a {
   display: flex;
   align-items: center;
-  color: white;
+  padding: 1.5rem;
   text-decoration: none;
-  gap: 5px;
+  color: #ffffff;
 }
 
-.nav-list {
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav-list__item {
-  color: white;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-button {
-  text-transform: uppercase;
-  height: 100%;
+nav a img {
+  height: 1rem;
+  width: auto;
 }
 
 .actions {
   display: flex;
-  align-items: center;
-}
-
-.button-buy-tickets {
-  background-color: #2a2a2a;
-  color: white;
-}
-
-.button-language {
-  background-color: #545454;
-  color: white;
+  justify-content: end;
+  align-items: stretch;
+  text-align: right;
+  padding: 0 1.5rem;
 }
 
 .button-buy-tickets,
 .button-language {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
+  width: auto;
   border: none;
+  padding: 0 1.5rem;
   color: white;
-  font-size: 16px;
+  background-color: #2a2a2a;
+  text-transform: uppercase;
 }
 
-.logo-container {
-  position: relative;
+.button-language {
+  background-color: #545454;
 }
 
 .stam-logo {
@@ -86,9 +78,21 @@ button {
   right: 0;
 }
 
-.erfgoedcel-logo {
+.cell-logo {
   position: absolute;
   top: 10rem;
   right: 0;
-  color: white;
+}
+
+.museum {
+  position: absolute;
+  left: 1.5rem;
+  top: 22rem;
+  width: 80%;
+}
+
+.down-arrow {
+  position: absolute;
+  right: 1rem;
+  bottom: 6rem;
 }
