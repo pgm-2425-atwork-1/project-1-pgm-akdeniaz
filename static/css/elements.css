@@ -56,6 +56,8 @@ header {
   align-items: center;
   background-color: var(--header-bg-green);
   height: 5.875rem;
+  position: relative;
+  overflow: visible;
 }
 
 nav {
@@ -73,10 +75,9 @@ nav a {
   color: var(--text-white);
 }
 
-nav a img {
+nav a svg {
   margin-left: var(--spacing-xs);
-  width: 1rem;
-  height: auto;
+  fill: white;
 }
 
 /*  MAIN - SECTIONS  */
