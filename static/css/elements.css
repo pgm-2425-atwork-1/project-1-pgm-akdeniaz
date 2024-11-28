@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --header-bg-green: #008855; /* homepage - about */
+  --header-bg-blue: #46aaea; /* agenda */
+  --header-bg-yellow: #e5e470; /* history */
+  --header-bg-pink: #f9c5a5; /* visit*/
+  --header-bg-orange: #ff5000;
+
+  --button-color-language: #545454;
+  --button-color-tickets: black;
+  --footer-color: black;
+
+  --text-white: white;
+  --text-green: #008855;
+
+  --font-body: "Roboto", serif;
+  --font-header: "Albert Sans", sans-serif;
+
+  --spacing: 2rem;
+  --spacing-s: 1.5rem;
+  --spacing-xs: 0.5rem;
+
+  --heading-1: 5rem;
+  --heading-1-mobile: 4rem;
+
+  --heading-2: 3rem;
+  --heading-2-mobile: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-header);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg-green);
+  height: 5.875rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-s);
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+nav a img {
+  margin-left: var(--spacing-xs);
+  width: 1rem;
+  height: auto;
+}
+
+/*  MAIN - SECTIONS  */
+
+/* FOOTER  */

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STAM | Home</title>
+    <title>STAM</title>
     <!-- robots.txt -->
     <meta name="robots" content="noindex,nofollow" />
     <!-- fonts roboto title - albert sans paragraph-->
@@ -16,19 +16,33 @@
     />
     <!-- css files -->
     <link rel="stylesheet" href="static/css/reset.css" />
+    <link rel="stylesheet" href="static/css/elements.css" />
     <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="/static/css/component-home.css" />
   </head>
   <body>
     <!--------------------------------------------------------->
     <!--  HEADER -->
-    <header class="d-header">
-      <div class="frame-3">
-        <nav>
+    <header>
+      <div class="left-content">
+        <div class="overlap">
+          <img
+            class="citymuseum"
+            src="static/images/Iconen en logos/stadsmuseum-gent.svg"
+            alt="stadsmuseum gent"
+          />
+          <img
+            class="down-arrow"
+            src="static/images/Iconen en logos/arrow-down-white.png"
+            alt="down arrow white"
+          />
+        </div>
+        <nav class="nav-list">
           <a href="index.html">
             Agenda
             <img
               src="static/images/Iconen en logos/arrow-corner-bottom.svg"
-              alt="Agenda Icon"
+              alt="Agenda arrow"
               class="nav-list__item"
             />
           </a>
@@ -36,7 +50,7 @@
             Historiek
             <img
               src="static/images/Iconen en logos/arrow-corner-bottom.svg"
-              alt="Historiek Icon"
+              alt="Historiek arrow"
               class="nav-list__item"
             />
           </a>
@@ -44,7 +58,7 @@
             Bezoek
             <img
               src="static/images/Iconen en logos/arrow-corner-bottom.svg"
-              alt="Bezoek Icon"
+              alt="Bezoek arrow"
               class="nav-list__item"
             />
           </a>
@@ -52,44 +66,38 @@
             Over het STAM
             <img
               src="static/images/Iconen en logos/arrow-corner-bottom.svg"
-              alt="Over STAM Icon"
+              alt="Over STAM arrow"
               class="nav-list__item"
             />
           </a>
         </nav>
-        <div class="actions">
-          <button class="button-buy-tickets">koop tickets</button>
-          <button class="button-language">nl</button>
+        <div class="right-content">
+          <div class="actions">
+            <button class="button-buy-tickets">
+              koop <br />
+              tickets
+            </button>
+            <button class="button-language">nl</button>
+          </div>
         </div>
-      </div>
-      <div>
-        <img
-          src="static/images/Iconen en logos/logo-vlak.svg"
-          alt="Logo"
-          class="stam-logo"
-        />
+        <div class="right-column">
+          <img
+            src="static/images/Iconen en logos/logo-vlak.svg"
+            alt="Logo"
+            class="stam-logo"
+          />
+          <img
+            class="cell"
+            src="static/images/Iconen en logos/erfgoedcel-logo.svg"
+            alt="erfgoedcel gent"
+          />
+        </div>
       </div>
     </header>
 
     <!--------------------------------------------------------->
     <!--  MAIN SECTION  -->
-
-    <img
-      src="static/images/Iconen en logos/erfgoedcel-logo.svg"
-      alt="erfgoedcel"
-      class="cell-logo"
-    />
-    <img src="static/images/homepage_homepagefront.png" alt="Homepagefront" />
-    <img
-      src="static/images/Iconen en logos/stadsmuseum-gent.svg"
-      alt="StadsMuseum-Gent"
-      class="museum"
-    />
-    <img
-      src="static/images/Iconen en logos/arrow-down.svg"
-      alt="down-arrow"
-      class="down-arrow"
-    />
+    <img src="static/images/homepage_homepagefront.png" alt="homepage" />
     <section class="agenda">
       <h2>Agenda</h2>
       <img
