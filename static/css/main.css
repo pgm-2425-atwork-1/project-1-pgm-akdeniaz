@@ -1,41 +1,50 @@
 /* HEADER */
 /* nav */
-.left-content {
+
+.header{
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 94px;
+  width: 100%;
+}
+
+/* .left-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1 0 0;
-}
+} */
 
 /* BUTTONS */
-.right-content {
+/* .right-content {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   position: relative;
-}
+} */
 
-.actions {
-  display: inline-flex;
+.action {
+  display: flex;
   align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.button-buy-tickets,
-.button-language {
-  height: 100%;
-  width: auto;
-  border: none;
-  padding: 0 var(--spacing-s);
-  color: var(--text-white);
+  padding: 0.6rem 1.5rem;
   background-color: var(--button-color-tickets);
+  text-decoration: none;
   text-transform: uppercase;
+  height: 100%;
 }
 
-.button-language {
+.action-ticket {
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+.action-language {
   background-color: var(--button-color-language);
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  color: var(--text-white);
 }
 
 /* STAM LOGO */
@@ -47,13 +56,18 @@
 
 .logos-overlay {
   display: flex;
-  flex-direction: column;
   align-items: flex-end;
   align-self: flex-start;
+  flex-direction: column;
+  z-index: 1;
+  /* width: 12rem;
+  height: 10rem; */
 }
 
 .stam-logo {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .cell {
@@ -102,6 +116,19 @@
 }
 
 /* agenda */
-.agenda h2{
+.agenda h2 {
   margin: 5rem 7.5rem;
+}
+
+.agenda .agenda-left {
+  background-color: var(--header-bg-orange);
+}
+
+.agenda .agenda-right {
+  color: var(--text-white);
+  background-color: var(--header-bg-green);
+}
+
+.agenda span {
+  color: var(--text-black);
 }

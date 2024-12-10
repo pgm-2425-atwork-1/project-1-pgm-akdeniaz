@@ -6,6 +6,12 @@
     <title>STAM</title>
     <!-- robots.txt -->
     <meta name="robots" content="noindex,nofollow" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="static/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="static/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="static/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="static/images/favicon/site.webmanifest" />
     <!-- fonts roboto title - albert sans paragraph-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +29,7 @@
   <body>
     <!--------------------------------------------------------->
     <!--  HEADER -->
-    <header>
+    <header class="header">
       <div class="left-content">        <nav class="nav-list">
           <a href="index.html">
             Agenda
@@ -50,26 +56,23 @@
             </svg>
           </a>
         </nav>
-        <div class="right-content">
-          <div class="actions">
-            <button class="button-buy-tickets">
-              koop <br />
-              tickets
-            </button>
-            <button class="button-language">nl</button>
-          </div>
-          <div class="logos-overlay">
-            <img
-              src="static/images/Iconen en logos/logo-vlak.svg"
-              alt="Logo"
-              class="stam-logo"
-            />
-            <img
-              class="cell"
-              src="static/images/Iconen en logos/erfgoedcel-logo.svg"
-              alt="erfgoedcel gent"
-            />
-          </div>
+
+          <div class="action">
+          <a class="action-ticket" href="#">koop <br>tickets</a>
+          <a class="action-language" href="#">nl</a>
+        </div>
+
+        <div class="logos-overlay">
+          <img
+            src="static/images/Iconen en logos/logo-vlak.svg"
+            alt="Logo"
+            class="stam-logo"
+          />
+          <img
+            class="cell"
+            src="static/images/Iconen en logos/erfgoedcel-logo.svg"
+            alt="erfgoedcel gent"
+          />
         </div>
         
     </header>
@@ -92,6 +95,7 @@
   </section>
     <section class="agenda">
       <h2>Agenda</h2>
+      <article class="agenda-left">
       <img
         src="static/images/events_activiteiten_gifverhaalvangentr2023.png"
         alt="Verhaalvangentr2023"
@@ -104,6 +108,8 @@
         groeien en veranderen van vorm, ontdek unieke objecten, ga op in
         digitale animaties en verdwaal in muurbrede kaarten.
       </p>
+    </article>
+    <article class="agenda-right">
       <img
         src="static/images/events_tentoonstellingen_Marcus-Haenebalcke.png"
         alt="Marcus Haenebalcke"
@@ -113,12 +119,11 @@
         alt="Wordt Verwacht Logo"
       />
       <h3>De Poorten - Op ‘t randje van de stad</h3>
-      <p>29.11.2024</p>
-      <img
-        src="static/images/Iconen en logos/arrow-corner-bottom.svg"
-        alt="Arrow bottom right"
-      />
-      <p>31.08.2025</p>
+      <span>29.11.2024</span>
+      <svg width="15" height="15" viewBox="0 0 14 14" >
+        <path d="M0 1.69L10.1 11.77H3.97V14H14V3.89H11.7V10.1L1.58 0L0 1.69Z"/>
+      </svg>
+      <span>31.08.2025</span>
       <p>
         Eeuwenlang kwam je de stad binnen via gigantische poorten. Vandaag vind
         je precies op die plaatsen dynamische en kleurrijke stadswijken. Wat
@@ -126,6 +131,7 @@
         hertekend? De meest besproken delen van de stad nemen in deze expo zelf
         het woord. Op 't randje van de stad, maar centraal in deze expo.
       </p>
+    </article>
     </section>
     <section class="uitgelicht">
       <h2>Uitgelicht</h2>

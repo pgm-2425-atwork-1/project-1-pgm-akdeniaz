@@ -11,6 +11,7 @@
   --button-color-tickets: black;
   --footer-color: black;
 
+  --text-black: black;
   --text-white: white;
   --text-green: #008855;
 
@@ -26,6 +27,9 @@
 
   --heading-2: 3rem;
   --heading-2-mobile: 2rem;
+
+  --heading-3: 2rem;
+  --heading-3-mobile: 1.5rem;
 }
 
 * {
@@ -40,6 +44,7 @@ body {
   height: 100%;
   font-family: var(--font-body);
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -48,27 +53,35 @@ h3 {
   font-family: var(--font-header);
 }
 
-/* HEADER */
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--header-bg-green);
-  height: 5.875rem;
-  position: relative;
-  overflow: visible;
+h1 {
+  font-size: var(--heading-1);
 }
+
+h2 {
+  padding: 5rem 7.5rem;
+  font-size: var(--heading-2);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: var(--heading-3);
+  font-weight: 500;
+  line-height: 120%;
+}
+
+/* HEADER */
 
 nav {
   display: flex;
+  background-color: var(--header-bg-green);
+  height: 100%;
   align-items: center;
-  position: relative;
-  flex: 0 0 auto;
+  padding: var(--spacing-s);
 }
 
 nav a {
   display: flex;
+  flex-grow: 1;
   align-items: center;
   padding: var(--spacing-s);
   text-decoration: none;
@@ -83,3 +96,9 @@ nav a svg {
 /*  MAIN - SECTIONS  */
 
 /* FOOTER  */
+
+@media (max-width: 48rem) {
+}
+
+@media (max-width: 96rem) {
+}
