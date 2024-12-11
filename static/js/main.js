@@ -14,3 +14,28 @@ $button.addEventListener("click", () => toggleDropdown(false));
 $main.addEventListener("click", (event) => {
   if (event.target !== $dropdown) toggleDropdown(false);
 });
+
+const sidenavLinks = document.querySelectorAll(".sidenav-link a");
+
+sidenavLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    if (link.getAttribute("href") === "#ontstaan") {
+      return;
+    }
+
+    event.preventDefault();
+    const targetId = link.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    const offsetPosition =
+      targetElement.getBoundingClientRect().top +
+      window.scrollY -
+      document.querySelector(".sidenav").offsetHeight -
+      5 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  });
+});
