@@ -14,9 +14,9 @@
   --font-body: "Roboto", serif;
   --font-header: "Albert Sans", sans-serif;
 
-  --spacing: 2rem;
+  --spacing: 2.5rem;
   --spacing-s: 1.5rem;
-  --spacing-xs: 0.5rem;
+  --spacing-xs: 0.6rem;
 
   --heading-1: 4rem;
   --heading-2: 3rem;
@@ -24,39 +24,35 @@
 }
 
 /*  --------------- General  ---------------  */
-html {
-  scroll-behavior: smooth;
-}
-
+html,
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+  font-family: var(--font-body);
   font-style: normal;
   color: var(--senaryColor);
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 140%;
   overflow-x: hidden;
-  min-width: 22rem;
+  min-width: 21.875rem;
+  scroll-behavior: smooth;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Albert Sans", sans-serif;
+  font-family: var(--font-header);
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 3.75rem;
-  font-weight: 400;
-  line-height: 1;
+  font-size: var(--heading-1);
+  line-height: 124%;
 }
 
 h2,
 summary {
+  font-size: var(--heading-2);
   padding: 5rem 7.5rem;
-  font-size: 2.8rem;
-  font-weight: 400;
-  line-height: 1;
+  line-height: 124%;
 }
 
 @media (max-width: 28rem) {
@@ -66,9 +62,13 @@ summary {
 }
 
 h3 {
-  font-size: 2.1rem;
+  font-size: var(--heading-3);
   font-weight: 500;
-  line-height: 1.24;
+  line-height: 124%;
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 /*  --------------- List  ---------------  */
@@ -86,7 +86,7 @@ a {
   text-decoration: none;
 }
 
-/*  ---------------  iFrame  ---------------  */
+/*  ---------------  iFrame (event)  ---------------  */
 iframe {
   position: absolute;
   top: 0;
@@ -95,11 +95,12 @@ iframe {
   height: 100%;
 }
 
-/*  --------------- Details  ---------------  */
+/*  --------------- Details (about)  ---------------  */
 details {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--spacing-s);
+  margin-bottom: 2rem;
 }
 
 summary {
@@ -112,7 +113,7 @@ summary {
 summary::after {
   text-align: center;
   content: "+";
-  color: var(--quaternaryColor);
+  color: var(--blue);
   transition: 0.3s;
   transform-origin: center;
 }

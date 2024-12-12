@@ -2,7 +2,7 @@
 .container-spacing {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--spacing-s);
 }
 
 .container-flex {
@@ -13,9 +13,10 @@
 .container-flex-gap {
   display: flex;
   gap: 0.5rem;
+  font-size: 1.5rem;
 }
 
-.wrapper {
+.box {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -41,20 +42,20 @@
 }
 
 /* Text */
-.text--primary {
+.text-white {
+  color: var(--white);
+}
+
+.text-green {
   color: var(--green);
 }
 
-.text--secondary {
-  color: var(--orange);
-}
-
-.link--primary {
+.link-primary {
   color: var(--black);
   text-decoration: underline;
 }
 
-.link--secondary {
+.link-secondary {
   color: var(--black);
 }
 
@@ -68,15 +69,15 @@
   font-style: italic;
 }
 
-.schedule {
+.date {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 100%;
-  letter-spacing: 0.075rem;
+  letter-spacing: 0.1rem;
 }
 
-.slashes::before,
-.slashes:after {
+.stroke::before,
+.stroke:after {
   content: " / ";
 }
 
@@ -88,13 +89,13 @@
 .list-flex {
   display: flex;
   padding: 0;
-  gap: 0.625rem;
+  gap: var(--spacing-xs);
 }
 
 .list-gap {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: var(--spacing-xs);
 }
 
 .list-item {

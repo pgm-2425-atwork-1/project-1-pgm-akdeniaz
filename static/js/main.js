@@ -4,20 +4,20 @@ const $button = document.getElementById("hidden-button");
 const $main = document.getElementById("main");
 const $filter = document.getElementById("filter");
 
-function toggleDropdown(state) {
+function toggleHidden(state) {
   $hidden.classList.toggle("toggle", state);
-  $filter.classList.toggle("filter--toggle", state);
+  $filter.classList.toggle("filter-toggle", state);
 }
 
-$hamburger.addEventListener("click", () => toggleDropdown());
-$button.addEventListener("click", () => toggleDropdown(false));
+$hamburger.addEventListener("click", () => toggleHidden());
+$button.addEventListener("click", () => toggleHidden(false));
 $main.addEventListener("click", (event) => {
-  if (event.target !== $hidden) toggleDropdown(false);
+  if (event.target !== $hidden) toggleHidden(false);
 });
 
-const sidenavLinks = document.querySelectorAll(".sidenav-link a");
+const sidemenuLinks = document.querySelectorAll(".sidemenu-link a");
 
-sidenavLinks.forEach((link) => {
+sidemenuLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     if (link.getAttribute("href") === "#ontstaan") {
       return;
@@ -30,7 +30,7 @@ sidenavLinks.forEach((link) => {
     const offsetPosition =
       targetElement.getBoundingClientRect().top +
       window.scrollY -
-      document.querySelector(".sidenav").offsetHeight -
+      document.querySelector(".sidemenu").offsetHeight -
       5 * parseFloat(getComputedStyle(document.documentElement).fontSize);
 
     window.scrollTo({
