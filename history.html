@@ -17,202 +17,375 @@
     <!-- css files -->
     <link rel="stylesheet" href="static/css/reset.css" />
     <link rel="stylesheet" href="static/css/elements.css" />
+    <link rel="stylesheet" href="static/css/general.css" />
     <link rel="stylesheet" href="static/css/main.css" />
-    <link rel="stylesheet" href="/static/css/component-history.css" />
+    <link rel="stylesheet" href="/static/css/history.css" />
   </head>
+
   <body>
-    <!--------------------------------------------------------->
-    <!--  HEADER -->
-    <header class="d-header">
-      <div class="frame-3">
-        <nav class="nav-list">
-          <a href="index.html">
-            Agenda
-            <img
-              src="static/images/Iconen en logos/arrow-corner-bottom.svg"
-              alt="Agenda Icon"
-              class="nav-list__item"
-            />
-          </a>
-          <a href="history.html">
-            Historiek
-            <img
-              src="static/images/Iconen en logos/arrow-corner-bottom.svg"
-              alt="Historiek Icon"
-              class="nav-list__item"
-            />
-          </a>
-          <a href="visit.html">
-            Bezoek
-            <img
-              src="static/images/Iconen en logos/arrow-corner-bottom.svg"
-              alt="Bezoek Icon"
-              class="nav-list__item"
-            />
-          </a>
-          <a href="about.html">
-            Over het STAM
-            <img
-              src="static/images/Iconen en logos/arrow-corner-bottom.svg"
-              alt="Over STAM Icon"
-              class="nav-list__item"
-            />
-          </a>
-        </nav>
-        <div class="actions">
-          <button class="button-buy-tickets">koop tickets</button>
-          <button class="button-language">nl</button>
-        </div>
-      </div>
-      <div>
+    <!----------------------------->
+    <!-- HEADER  -->
+    <header class="header">
+      <nav class="header-nav nav-yellow">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link" href="events/he-who-keeps-remains.html"
+              >Agenda<img
+                class="link-icon"
+                src="static/images/arrow-black.svg"
+                alt="arrow corner bottom"
+            /></a>
+          </li>
+          <li>
+            <a class="nav-link" href="history.html"
+              ><u>Historiek</u
+              ><img
+                class="link-icon"
+                src="static/images/arrow-black.svg"
+                alt="arrow corner bottom"
+            /></a>
+          </li>
+          <li>
+            <a class="nav-link" href="visit.html"
+              >Bezoek<img
+                class="link-icon"
+                src="static/images/arrow-black.svg"
+                alt="arrow corner bottom"
+            /></a>
+          </li>
+          <li>
+            <a class="nav-link" href="about.html"
+              >Over het STAM<img
+                class="link-icon"
+                src="static/images/arrow-black.svg"
+                alt="arrow corner bottom"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="nav-hamburger nav-yellow">
         <img
-          src="static/images/Iconen en logos/logo-vlak.svg"
-          alt="Logo STAM"
-          class="stam-logo"
+          class="hamburger-icon"
+          src="static/images/hamburger-black.svg"
+          alt="hamburger"
+          id="hamburger"
         />
+      </nav>
+
+      <nav id="hidden" class="hidden nav-yellow">
+        <ul class="hidden-list">
+          <li>
+            <a
+              class="nav-link nav-link-hidden"
+              href="events/he-who-keeps-remains.html"
+            >
+              Agenda
+              <img
+                class="link-icon"
+                src="static/images/arrow-black.svg"
+                alt="arrow corner bottom"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="nav-link nav-link-hidden" href="history.html">
+              Historiek
+              <img
+                class="link-icon"
+                src="static/images/arrow-black.svg"
+                alt="arrow corner bottom"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="nav-link nav-link-hidden" href="visit.html">
+              Bezoek
+              <img
+                class="link-icon"
+                src="static/images/arrow-black.svg"
+                alt="arrow corner bottom"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="nav-link nav-link-hidden" href="about.html">
+              Over het stam
+              <img
+                class="link-icon"
+                src="static/images/arrow-black.svg"
+                alt="arrow corner bottom"
+              />
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="hidden-button hidden-button--black" id="hidden-button">
+          +
+        </button>
+      </nav>
+      <div class="filter" id="filter"></div>
+
+      <a class="action action-ticket" href="#">koop <br />tickets</a>
+      <a class="action action-language" href="#">nl</a>
+
+      <div class="header-logos">
+        <a href="index.html"
+          ><img class="logo-image" src="static/images/logo-vlak-green.svg" alt="stam"
+        /></a>
+        <a href="index.html">
+          <img
+            class="logo-image logo-image-primary"
+            src="static/images/erfgoedcel-logo-wit.svg"
+            alt="erfgoedcel"
+          />
+        </a>
       </div>
     </header>
     <!--------------------------------------------------------->
-    <!--  MAIN SECTION -->
-    <div class="frame-17">
-      <div class="frame-16">
-        <ul>
-          <a href="#">Ontstaan</a>
-          <a href="#">Groei</a>
-          <a href="#">Bloei</a>
-          <a href="#">Vandaag</a>
+    <!-- MAIN  -->
+    <main id="main" class="history-main">
+      <aside class="sidemenu navbar--tertiary">
+        <ul class="list-gap">
+          <li class="sidemenu-link"><a href="#ontstaan">Ontstaan</a></li>
+          <li class="sidemenu-link"><a href="#groei">Groei</a></li>
+          <li class="sidemenu-link"><a href="#bloei">Bloei</a></li>
+          <li class="sidemenu-link"><a href="#vandaag">Vandaag</a></li>
         </ul>
-      </div>
-    </div>
-    <div class="content-history">
-      <h1>Historiek</h1>
-      <img src="static/images/header-historiek.png" alt="historiek" />
-      <p>
-        Over de verzamelgeschiedenis van de STAMcollectie verscheen in het
-        najaar van 2016 een rijk geïllustreerd boek, samengesteld door
-        STAMmedewerker Wout De Vuyst, geschreven door Patrick De Rynck en
-        vormgegeven door de STAMhuisstijlvormgevers Dooreman & Dams. Na meer dan
-        180 jaar verzamelen, vallen heel wat boeiende verhalen achter de
-        objecten te vertellen.
-      </p>
-      <div class="frame-20">
-        <img src="static/images/over_historiek_collectie.png" alt="collectie" />
+      </aside>
 
-        <h2>Ontstaan</h2>
-        <p>
-          De STAMcollectie vindt, zoals de meeste museumverzamelingen, haar
-          oorsprong in de vroege 19de eeuw. Toen gingen geschiedkundigen intens
-          op zoek naar alles wat van betekenis was voor het regionale en
-          nationale verleden.
-        </p>
-        <p>
-          In 1833 richtten de leden van de Commissie voor Monumenten en
-          Stadsgezichten van Gent het oudheidkundig museum ‘Musée historique
-          belge’ op. Dit kaderde volledig in de romantisch-patriottische visie
-          van deze jaren, waarin men grote belangstelling had voor lokale en
-          nationale geschiedenis. De collectiestukken werden geschonken door de
-          leden van de Commissie.
-        </p>
+      <div class="history-container">
+        <section class="container-spacing">
+          <h1>Historiek</h1>
+          <img
+            class="image-padding"
+            src="static/images/historiek.png"
+            alt="voorwerp beschrijvingen"
+          />
+          <p>
+            Over de verzamelgeschiedenis van de STAMcollectie verscheen in het
+            najaar van 2016 een
+            <a
+              href="https://stamgent.be/nl_be/collectie/collectieboek"
+              target="_blank"
+              class="link--secondary"
+              >rijk geïllustreerd boek</a
+            >, samengesteld door STAMmedewerker Wout De Vuyst, geschreven door
+            Patrick De Rynck en vormgegeven door de STAMhuisstijlvormgevers
+            Dooreman & Dams. Na meer dan 180 jaar verzamelen, vallen heel wat
+            boeiende verhalen 
+            <a
+              href="https://stamgent.be/nl_be/collectie/straffe-stukken"
+              target="_blank"
+              class="link--secondary"
+              >achter de objecten</a
+            >
+            te vertellen.
+          </p>
+        </section>
+
+        <section class="history-item" id="ontstaan">
+          <img
+            class="history-image"
+            src="static/images/onstaan.png"
+            alt="tekst historisch museum"
+          />
+          <div class="history-text">
+            <h2 class="history-title">Ontstaan</h2>
+            <p>
+              De STAMcollectie vindt, zoals de meeste museumverzamelingen, haar
+              oorsprong in de vroege 19de eeuw. Toen gingen geschiedkundigen
+              intens op zoek naar alles wat van betekenis was voor het regionale
+              en nationale verleden.
+            </p>
+
+            <p>
+              In 1833 richtten de leden van de Commissie voor Monumenten en
+              Stadsgezichten van Gent het oudheidkundig museum ‘Musée historique
+              belge’ op. Dit kaderde volledig in de romantisch-patriottische
+              visie van deze jaren, waarin men grote belangstelling had voor
+              lokale en nationale geschiedenis. De collectiestukken werden
+              geschonken door de leden van de Commissie.
+            </p>
+          </div>
+        </section>
+
+        <section class="history-item" id="groei">
+          <div class="history-text">
+            <h2 class="history-title">Groei</h2>
+            <p>
+              Gaandeweg bouwde men dankzij bescheiden bijdragen van weldoeners
+              in korte tijd een heterogene verzameling op. Door belangrijke
+              toevoegingen uit het stedelijke patrimonium groeide ze uit tot een
+              zeer gevarieerd, interessant en merkwaardig geheel, met bijzondere
+              focus op alles wat met Gent te linken was. Het jaar 1848 was een
+              belangrijke mijlpaal voor de collectie: toen schonk het Gentse
+              stadsbestuur verschillende belangrijke objecten uit het stedelijke
+              patrimonium aan het museum. Vanaf 1884 werd het museum een
+              stedelijke instelling en kreeg het zijn eerste conservator.
+            </p>
+          </div>
+          <img
+            class="history-image"
+            src="static/images/wapenschild.png"
+            alt="wapenschild"
+          />
+        </section>
+
+        <section class="container-spacing" id="bloei">
+          <h2 class="history-title">Bloei</h2>
+          <p>
+            Op 19de-eeuwse veilingen van vermaarde Gentse kunstverzamelingen
+            slaagde men erin unieke stukken over de Gentse ambachten en objecten
+            uit het dagelijkse leven te verwerven. In de loop van de 19de en
+            20ste eeuw ging bij de collectievorming grote aandacht naar stukken
+            die typerend zijn voor (de geschiedenis van) Gent. De collectie werd
+            aangevuld door het afstaan van, ruilen met of in bruikleen geven van
+            objecten aan andere Gentse instellingen en musea, en door
+            zorgvuldige aankopen, schenkingen, legaten en het aangaan van
+            permanente bruiklenen.
+          </p>
+
+          <p>
+            In de loop van de 20ste eeuw zette de faam van deze collectie de
+            Gentse burgerij aan tot talloze schenkingen en legaten. Een rijke
+            wapenverzameling, objecten rond vrijmetselarij en Chinese kunst
+            behoren sindsdien tot de verzameling. De Gentse militaire gilden
+            gaven een deel van hun buitengewoon kunstbezit permanent in
+            bruikleen.
+          </p>
+
+          <p>
+            Doorheen de jaren werd de collectie op nogal wat plekken
+            ondergebracht: van het klooster van de Jezuïeten in de Volderstraat
+            naar het stadhuis (1838), vervolgens naar de kerk van de
+            Baudelo-abdij aan de Ottogracht (1874) en dan weer naar de kerk van
+            de geschoeide Karmelieten in de Langesteenstraat (1884). Ten slotte
+            vond de verzameling een gepast onderkomen in de prachtige gebouwen
+            van de Bijlokeabdij (1928).
+          </p>
+          <img src="static/images/Bijlokeabdij .png" alt="Bijlokeabdij 1928" />
+        </section>
+
+        <section id="vandaag" class="container-spacing">
+          <h2 class="history-title">Vandaag</h2>
+          <p>
+            Op 11 september 2005 ging het Bijlokemuseum dicht, op 9 oktober 2010
+            opende het STAM-Stadsmuseum Gent. Na meer dan 180 jaar verzamelen,
+            na selecties en heroriënteringen en via uitwisselingen tussen
+            verschillende stedelijke museale collecties beschikken we voor Gent
+            met de Bijlokecollectie, nu de STAMcollectie, over een belangrijke
+            verzameling waarin alle kunstdisciplines vertegenwoordigd zijn.
+          </p>
+        </section>
       </div>
-      <div class="frame-21">
-        <h2>Groei</h2>
-        <p>
-          Gaandeweg bouwde men dankzij bescheiden bijdragen van weldoeners in
-          korte tijd een heterogene verzameling op. Door belangrijke
-          toevoegingen uit het stedelijke patrimonium groeide ze uit tot een
-          zeer gevarieerd, interessant en merkwaardig geheel, met bijzondere
-          focus op alles wat met Gent te linken was. Het jaar 1848 was een
-          belangrijke mijlpaal voor de collectie: toen schonk het Gentse
-          stadsbestuur verschillende belangrijke objecten uit het stedelijke
-          patrimonium aan het museum. Vanaf 1884 werd het museum een stedelijke
-          instelling en kreeg het zijn eerste conservator.
-        </p>
-        <img src="static/images/collectie-over_adhocwout.png" alt="adhocwout" />
+    </main>
+
+    <section class="collection">
+      <h3 class="collection-title">meest bekeken collectie-items</h3>
+      <div class="collection-items">
+        <article class="collection-item">
+          <img
+            src="static/images/onze-lieve-vrouw-van-de-rozenkrans.png"
+            alt="Onze-lieve-vrouw van de Rozenkrans "
+          />
+          <a class="link" href="#">Onze-Lieve-Vrouw van de <br />Rozenkrans</a>
+        </article>
+
+        <article class="collection-item">
+          <img
+            src="static/images/de-dorstigen-laven.png"
+            alt="De dorstigen laven"
+          />
+          <a class="link" href="#">De dorstigen laven</a>
+        </article>
+
+        <article class="collection-item">
+          <img src="static/images/kaarsenkroon.png" alt="Kaarsenkroon" />
+          <a class="link" href="#"
+            >Kaarsenkroon van twee hoogten <br />
+            met telkens zes armen</a
+          >
+        </article>
+
+        <article class="collection-item">
+          <img
+            src="static/images/de-hongerigen-spijzen.png"
+            alt="De hongerigen spijzen"
+          />
+          <a class="link" href="#">De hongerigen spijzen</a>
+        </article>
       </div>
-      <h2>Bloei</h2>
-      <p>
-        Op 19de-eeuwse veilingen van vermaarde Gentse kunstverzamelingen slaagde
-        men erin unieke stukken over de Gentse ambachten en objecten uit het
-        dagelijkse leven te verwerven. In de loop van de 19de en 20ste eeuw ging
-        bij de collectievorming grote aandacht naar stukken die typerend zijn
-        voor (de geschiedenis van) Gent. De collectie werd aangevuld door het
-        afstaan van, ruilen met of in bruikleen geven van objecten aan andere
-        Gentse instellingen en musea, en door zorgvuldige aankopen, schenkingen,
-        legaten en het aangaan van permanente bruiklenen.
-      </p>
-      <p>
-        In de loop van de 20ste eeuw zette de faam van deze collectie de Gentse
-        burgerij aan tot talloze schenkingen en legaten. Een rijke
-        wapenverzameling, objecten rond vrijmetselarij en Chinese kunst behoren
-        sindsdien tot de verzameling. De Gentse militaire gilden gaven een deel
-        van hun buitengewoon kunstbezit permanent in bruikleen.
-      </p>
-      <p>
-        Doorheen de jaren werd de collectie op nogal wat plekken ondergebracht:
-        van het klooster van de Jezuïeten in de Volderstraat naar het stadhuis
-        (1838), vervolgens naar de kerk van de Baudelo-abdij aan de Ottogracht
-        (1874) en dan weer naar de kerk van de geschoeide Karmelieten in de
-        Langesteenstraat (1884). Ten slotte vond de verzameling een gepast
-        onderkomen in de prachtige gebouwen van de Bijlokeabdij (1928).
-      </p>
-      <img src="static/images/collectie-over_STAM_glasdia.png" alt="Bloei" />
-      <h2>Vandaag</h2>
-      <p>
-        Op 11 september 2005 ging het Bijlokemuseum dicht, op 9 oktober 2010
-        opende het STAM-Stadsmuseum Gent. Na meer dan 180 jaar verzamelen, na
-        selecties en heroriënteringen en via uitwisselingen tussen verschillende
-        stedelijke museale collecties beschikken we voor Gent met de
-        Bijlokecollectie, nu de STAMcollectie, over een belangrijke verzameling
-        waarin alle kunstdisciplines vertegenwoordigd zijn.
-      </p>
-    </div>
+    </section>
     <!--------------------------------------------------------->
-    <!--  FOOTER TOP -->
-    <footer class="footer-top">
-      <img src="static/images/Iconen en logos/logo.svg" alt="Logo" />
-      <div class="footer-section">
-        <h3>Stadsmuseum Gent</h3>
-        <p>
-          BijlokesiteGodshuizenlaan 2 - 9000 Gent09 267 14 00info@stamgent.be
-        </p>
-        <img
-          src="static/images/partners_Vlaanderen_verbeelding-werkt.png"
-          alt="Vlaanderen"
-        />
-        <img src="static/images/partners_logo_gent.png" alt="Gent" />
-      </div>
-      <div class="footer-section">
-        <h3>mis geen nieuwtjes</h3>
-        <div class="nieuwsbrief"><p>Schrijf je in op de nieuwsbrief</p></div>
-        <img src="static/images/Iconen en logos/facebook.svg" alt="facebook" />
-        <img src="static/images/Iconen en logos/twitter.svg" alt="twitter" />
-        <img
-          src="static/images/Iconen en logos/instagram.svg"
-          alt="instagram"
-        />
-        <img src="static/images/Iconen en logos/youtube.svg" alt="youtube" />
-        <img src="static/images/Iconen en logos/linkedin.svg" alt="linkedin" />
-        <a href="#">Nederlands</a>
-        <a href="#">Français</a>
-        <a href="#">English</a>
-      </div>
-    </footer>
-    <!--------------------------------------------------------->
-    <!--  FOOTER BOTTOM -->
-    <footer class="footer-bottom">
-      <p>&copy;STAM alle rechten voorbehouden</p>
-      <div>
-        <li>Privacybeleid</li>
-        <li>Colofon</li>
-        <li>Disclaimer</li>
-        <li>Algemene voorwaarden & bewaking</li>
-      </div>
-      <img
-        src="static/images/Iconen en logos/erfgoedcel-logo.svg"
-        alt="Erfgoedcel-logo"
-      />
-      <p>made by</p>
-      <img src="static/images/Iconen en logos/glue.svg" alt="glue" />
+    <!-- FOOTER  -->
+    <footer class="footer">
+        <div class="footer-top">
+            <a href="index.html"><img class="footer-logo" src="static/images/logo.svg"
+                    alt="STAM"></a>
+
+            <article class="footer-item container-spacing">
+                <h2 class="footer-title">Stadsmuseum Gent</h2>
+                <ul>
+                    <li>Bijlokesite</li>
+                    <li>Godshuizenlaan 2 - 9000 Gent</li>
+                    <li>09 267 14 00</li>
+                    <li>info@stamgent.be</li>
+                </ul>
+                <ul class="list-flex">
+                    <li><a href="#"><img src="static/images/logo-vlaanderen.png" alt="Vlaanderen"></a></li>
+                    <li><a href="#"><img src="static/images/logo-gent.png" alt="Gent"></a></li>
+                </ul>
+            </article>
+
+            <article class="footer-item container-spacing">
+                <h2 class="footer-title">mis geen nieuwtjes</h2>
+                <a class="footer-news" href="#">Schrijf je in op de nieuwsbrief</a>
+                <div class="footer-socials">
+                    <a href="index.html"><img class="item-logo" src="static/images/logo.svg" alt="STAM"></a>
+                    <ul class="list-flex">
+                        <li class="social-border"><a href="#"><img src="static/images/facebook.svg"
+                                    alt="facebook logo"></a>
+                        </li>
+                        <li class="social-border"><a href="#"><img src="static/images/twitter.svg"
+                                    alt="twitter logo"></a>
+                        </li>
+                        <li class="social-border"><a href="#"><img src="static/images/instagram.svg"
+                                    alt="instagram logo"></a></li>
+                        <li class="social-border"><a href="#"><img src="static/images/youtube.svg"
+                                    alt="youtube logo"></a>
+                        </li>
+                        <li class="social-border"><a href="#"><img src="static/images/linkedin.svg"
+                                    alt="linkedin logo"></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="list-flex">
+                    <li><a class="link-primary" href="#">Nederlands</a></li>
+                    <li><a class="link-secondary stroke" href="#">Français</a></li>
+                    <li><a class="link-secondary" href="#">English</a></li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-content">
+                <p class="text-white">© STAM alle rechten voorbehouden</p>
+                <ul class="footer-list">
+                    <li><a href="#">Privacybeleid</a></li>
+                    <li><a href="#">Colofon</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Algemene voorwaarden & bewaking</a></li>
+                </ul>
+                <div class="footer-box">
+                    <img class="footer-image" src="static/images/heritage_logo_rotated.svg" alt="erfgoedcel">
+                    <div class="box">
+                        <p class="text-white">made by</p>
+                        <a href="https://glue.be/" target="_blank"><img class="footer-image"
+                                src="static/images/glue.svg" alt="Glue logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="static/js/main.js"></script>
   </body>

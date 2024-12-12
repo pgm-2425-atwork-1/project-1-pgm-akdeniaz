@@ -1,8 +1,8 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  row-gap: 2.5rem;
-  max-width: 52.5rem;
+  row-gap: var(--spacing);
+  max-width: 52rem;
   width: 95%;
   margin: 6.25rem auto 1.25rem;
 }
@@ -16,5 +16,5 @@
   font-weight: 500;
   line-height: 1;
   padding: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-s);
 }

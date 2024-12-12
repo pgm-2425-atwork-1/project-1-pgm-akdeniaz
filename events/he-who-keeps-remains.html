@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kinderspoor door 'Het verhaal van Gent' | STAM</title>
-    <!-- robots.txt -->
+    <!- robots.txt ->
     <meta name="robots" content="noindex,nofollow" />
-    <!-- fonts roboto title - albert sans paragraph-->
+    <!- fonts roboto title - albert sans paragraph->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,180 +14,317 @@
       href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <!-- css files -->
+    <!- css files ->
     <link rel="stylesheet" href="../static/css/reset.css" />
     <link rel="stylesheet" href="../static/css/elements.css" />
+    <link rel="stylesheet" href="../static/css/general.css" />
     <link rel="stylesheet" href="../static/css/main.css" />
-    <link rel="stylesheet" href="../static/css/component-event.css" />
+    <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="stylesheet" href="../static/css/event.css" />
   </head>
-  <!--------------------------------------------------------->
-  <!-- HEADER  -->
+
   <body>
-    <header>
-        <nav class="navbar navbar--secondary">
-            <ul class="navbar__list">
-                <li>
-                    <a href="he-who-keeps-remains.html" class="navbar__link">
-                        Agenda
-                        <img src="../static/images/arrow-corner-bottom.svg" alt="Arrow Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="../history.html" class="navbar__link">
-                        Historiek
-                        <img src="../static/images/arrow-corner-bottom.svg" alt="Arrow Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="../visit.html" class="navbar__link">
-                        Bezoek
-                        <img src="../static/images/arrow-corner-bottom.svg" alt="Arrow Icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="../about.html" class="navbar__link">
-                        Over het STAM
-                        <img src="../static/images/arrow-corner-bottom.svg" alt="Arrow Icon">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <!----------------------------->
+    <!-- HEADER  -->
+    <header class="header">
+      <nav class="header-nav nav-blue">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link" href="he-who-keeps-remains.html"
+              ><u>Agenda</u
+              ><img
+                class="link-icon"
+                src="../static/images/arrow-black.svg"
+                alt="corner arrow"
+            /></a>
+          </li>
+          <li>
+            <a class="nav-link" href="../history.html"
+              >Historiek<img
+                class="link-icon"
+                src="../static/images/arrow-black.svg"
+                alt="corner arrow"
+            /></a>
+          </li>
+          <li>
+            <a class="nav-link" href="../visit.html"
+              >Bezoek<img
+                class="link-icon"
+                src="../static/images/arrow-black.svg"
+                alt="corner arrow"
+            /></a>
+          </li>
+          <li>
+            <a class="nav-link" href="../about.html"
+              >Over het STAM<img
+                class="link-icon"
+                src="../static/images/arrow-black.svg"
+                alt="corner arrow"
+            /></a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="hamburger-menu">
-            <img src="../static/images/hamburger.svg" alt="Menu Icon" id="hamburger">
-        </div>
+      <nav class="nav-hamburger nav-blue">
+        <img
+          class="hamburger-icon"
+          src="../static/images/hamburger-black.svg"
+          alt="hamburger-menu"
+          id="hamburger"
+        />
+      </nav>
 
-        <nav id="dropdown" class="dropdown navbar--secondary">
-            <ul class="dropdown__list">
-                <li><a href="he-who-keeps-remains.html" class="dropdown__link">Agenda</a></li>
-                <li><a href="../history.html" class="dropdown__link">Historiek</a></li>
-                <li><a href="../visit.html" class="dropdown__link">Bezoek</a></li>
-                <li><a href="../about.html" class="dropdown__link">Over het STAM</a></li>
-            </ul>
-            <button type="button" id="dropdown-button" class="dropdown__button">+</button>
-        </nav>
-
-        <div id="filler"></div>
-
-        <div class="header__actions">
-            <a href="#" class="btn btn--primary">Koop Tickets</a>
-            <a href="#" class="btn btn--secondary">NL</a>
-        </div>
-
-        <div class="header__logo">
-            <a href="../index.html">
-                <img src="../static/images/logo-vlak-yellow.svg" alt="STAM Logo">
+      <nav id="hidden" class="hidden nav-blue">
+        <ul class="hidden-list">
+          <li>
+            <a
+              class="nav-link nav-link-hidden"
+              href="he-who-keeps-remains.html"
+            >
+              Agenda
+              <img
+                class="link-icon"
+                src="../static/images/arrow-black.svg"
+                alt="corner arrow"
+              />
             </a>
-        </div>
+          </li>
+          <li>
+            <a class="nav-link nav-link-hidden" href="../history.html">
+              Historiek
+              <img
+                class="link-icon"
+                src="../static/images/arrow-black.svg"
+                alt="corner arrow"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="nav-link nav-link-hidden" href="../visit.html">
+              Bezoek
+              <img
+                class="link-icon"
+                src="../static/images/arrow-black.svg"
+                alt="corner arrow"
+              />
+            </a>
+          </li>
+          <li>
+            <a class="nav-link nav-link-hidden" href="../about.html">
+              Over het stam
+              <img
+                class="link-icon"
+                src="../static/images/arrow-black.svg"
+                alt="corner arrow"
+              />
+            </a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="hidden-button hidden-button--black"
+          id="hidden-button"
+        >
+          +
+        </button>
+      </nav>
+      <div class="filter" id="filter"></div>
+
+      <a class="action action-ticket" href="#">koop <br />tickets</a>
+      <a class="action action-language" href="#">nl</a>
+
+      <div class="header-logos">
+        <a href="../index.html">
+          <img
+            class="logo-image"
+            src="../static/images/logo-vlak-yellow.svg"
+            alt="stam"
+          />
+        </a>
+      </div>
     </header>
+    <!----------------------------->
+    <!-- MAIN  -->
+    <main id="main" class="collection-container">
+      <section class="collection">
+          <header class="collection-header">
+              <a class="nav-link link-secondary" href="../index.html#agenda"><img
+                      src="../static/images/arrow-corner-top.svg" alt="">Agenda</a>
+              <h1>Wie bewaart, die blijft! Koru ve yaşat! </h1>
+              <p class="schedule text-green container-flex-gap">29.11.2024 <img
+                      src="../static/images/arrow-corner-right.svg" alt="">31.08.2025</p>
+          </header>
+          <article class="collection-content">
+              <img class="collection-item" src="../static/images/turkse-migratie.png" alt="Turks koppel">
+              <div class="collection-item">
+                  <ul class="list">
+                      <li class="list-item">Van 21 april 2024 t.e.m. 30 december 2024</li>
+                      <li class="list-item">Zaalteksten: Nederlands</li>
+                      <li class="list-item">Gratis, op het STAMplein</li>
+                      <li class="list-item">
+                          Een initiatief van Burgerplicht vzw, Erfgoedcel Gent, Collectie van de
+                          Gentenaar en het STAM
+                      </li>
+                      <li class="list-item">
+                          I.s.m. Ergenekon, Posküder, Enderun, Rede, Studiebegeleiding Actief & Studentenvereniging
+                          Flux
+                      </li>
+                  </ul>
+                  <p class="source">Beeld: Yener Demirci</p>
+              </div>
+          </article>
+      </section>
 
-    <main id="main">
-        <section class="exhibition">
-            <header class="exhibition__header">
-                <a href="../index.html#agenda" class="exhibition__back-link">
-                    <img src="../static/images/arrow-corner-top.svg" alt="Back to Agenda">
-                    Agenda
-                </a>
-                <h1 class="exhibition__title">Wie bewaart, die blijft! Koru ve yaşat!</h1>
-                <p class="exhibition__date-range">29.11.2024 - 31.08.2025</p>
-            </header>
+      <section class="video-container">
+          <p>
+              Zestig jaar geleden kwam de Turkse migratie naar Gent op gang. Vandaag heeft bijna een tiende van de
+              Gentenaren Turkse roots. Jongeren uit de Turkse diaspora gingen op zoek naar de verhalen, voorwerpen en
+              betekenissen achter die cijfers. 'Wie bewaart, die blijft! Koru ve yaşat!', een sneak peek van een
+              groeiende Gents-Turkse erfgoedcollectie.
+          </p>
+          <div class="iframe-container">
+              <iframe src="https://www.youtube.com/embed/M2KqBHADHuI?si=YfWYOFnz7ismlvMD" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
 
-            <article class="exhibition__details">
-                <img src="../static/images/turkse-migratie.png" alt="Turks Koppel" class="exhibition__image">
-                <div class="exhibition__info">
-                    <ul class="info__list">
-                        <li>Van 21 april 2024 t.e.m. 30 december 2024</li>
-                        <li>Zaalteksten: Nederlands</li>
-                        <li>Gratis, op het STAMplein</li>
-                        <li>Een initiatief van Burgerplicht vzw, Erfgoedcel Gent, Collectie van de Gentenaar en het STAM</li>
-                        <li>I.s.m. Ergenekon, Posküder, Enderun, Rede, Studiebegeleiding Actief & Studentenvereniging Flux</li>
-                    </ul>
-                    <p class="exhibition__credits">Beeld: Yener Demirci</p>
-                </div>
-            </article>
-        </section>
+          <p>
+              Wat moeten we uit de voorbije decennia van Turkse migratie naar Gent bewaren voor de toekomstige
+              generaties Gentenaren? Die vraag staat centraal in het Gents-Turks Erfgoedtraject, een project getrokken
+              door jongeren met Turkse roots. Het afgelopen jaar zochten ze voorwerpen, betekenissen en verhalen die
+              verband houden met de Turkse migratie naar Gent en gingen ze te rade bij grootouders, ouders en
+              kennissen.
+          </p>
 
-        <section class="video-section">
-            <p class="video__description">
-                Zestig jaar geleden kwam de Turkse migratie naar Gent op gang. Vandaag heeft bijna een tiende van de
-                Gentenaren Turkse roots...
-            </p>
+          <p>
+              Wat ze vonden aan erfgoed en erfenissen selecteerden ze voor een nieuwe Gents-Turkse erfgoedcollectie.
+              Benieuwd naar de eerste vondsten van dit traject? 'Wie bewaart, die blijft! Koru ve yaşat!' biedt een
+              sneak peek van de jonge collectie en geeft een idee in welke richting deze collectie zal evolueren.
+          </p>
 
-            <div class="video__container">
-                <iframe src="https://www.youtube.com/embed/M2KqBHADHuI" title="YouTube Video Player" frameborder="0" allowfullscreen></iframe>
-            </div>
+      </section>
 
-            <p class="video__description">
-                Wat moeten we uit de voorbije decennia van Turkse migratie naar Gent bewaren voor toekomstige generaties...
-            </p>
-        </section>
+      <h2 class="events-title">nu ook in het STAM</h2>
+      <section class="events-container events-container-collection">
+          <article class="event-item">
+              <div class="overlay-container">
+                  <img class="event-image" src="../static/images/familie-atelier.png" alt="Meisje in atelier">
+                  <img class="overlay-image event-overlay" src="../static/images/vlieg.svg" alt="vlieg icon">
+              </div>
+              <h3><a class="link link-secondary" href="#">Open familieatelier: Wat als ...</a></h3>
+              <p class="schedule text-green">permanent</p>
+              <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
+                  bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
+                  slag!
+              </p>
+          </article>
 
-        <h2 class="section__title">Nu ook in het STAM</h2>
-        <section class="events__list">
-            <article class="event">
-                <img src="../static/images/familie-atelier.png" alt="Familie Atelier" class="event__image">
-                <h3 class="event__title"><a href="#">Open familieatelier: Wat als...</a></h3>
-                <p class="event__schedule">Permanent</p>
-                <p class="event__description">Doe je ‘Het verhaal van Gent’, dan kom je een gezellig familieatelier tegen vol met bouwelementen...</p>
-            </article>
+          <article class="event-item">
+              <div class="overlay-container">
+                  <img class="event-image" src="../static/images/kinderspoor.png" alt="Meisje bouwt in atelier">
+                  <img class="overlay-image event-overlay" src="../static/images/vlieg.svg" alt="vlieg icon">
+              </div>
+              <h3><a class="link link-secondary" href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
+              <p class="schedule text-green">permanent</p>
+              <p>Doe je ‘Het verhaal van Gent’, dan kom je ook een gezellig familieatelier tegen vol met
+                  bouwelementen. Wat als ... jij de stad mag vormgeven? Hoe zou die er dan uitzien? Aan de
+                  slag!
+              </p>
+          </article>
 
-            <article class="event">
-                <img src="../static/images/kinderspoor.png" alt="Kinderspoor" class="event__image">
-                <h3 class="event__title"><a href="#">Kinderspoor door 'Het verhaal van Gent'</a></h3>
-                <p class="event__schedule">Permanent</p>
-                <p class="event__description">Doe je ‘Het verhaal van Gent’, dan kom je een gezellig familieatelier tegen vol met bouwelementen...</p>
-            </article>
+          <article class="event-item event-item-secondary">
+              <div>
+                  <img class="event-image" src="../static/images/stamplein.png" alt="stamplein">
+              </div>
+              <h3><a class="link link-secondary" href="#">STAMplein: De vierkante kilometer - Dampoort</a></h3>
+              <div class="schedule text-green">
+                  <p>03.05.2024</p>
+                  <div class="box">
+                      <img src="../static/images/arrow-green.svg" alt="">
+                      <p>09.03.2024</p>
+                  </div>
+              </div>
+              <p>Het STAMplein is een gratis stukje museum met een wisselende programmatie. Ontdek er de
+                  schatten
+                  van
+                  de vijfde aflevering van het erfgoedproject 'De vierkante kilometer' waarbij Dampoort
+                  uitgelicht
+                  wordt.</p>
+          </article>
+      </section>
+  </main>
+    <!----------------------------->
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <div class="footer-top">
+          <a href="../index.html"><img class="footer-logo" src="../static/images/logo.svg"
+                  alt="STAM"></a>
 
-            <article class="event">
-                <img src="../static/images/stamplein.png" alt="STAMplein" class="event__image">
-                <h3 class="event__title"><a href="#">STAMplein: De vierkante kilometer - Dampoort</a></h3>
-                <p class="event__schedule">03.05.2024 - 09.03.2024</p>
-                <p class="event__description">Het STAMplein is een gratis stukje museum met een wisselende programmatie...</p>
-            </article>
-        </section>
-    </main>
+          <article class="footer-item container-spacing">
+              <h2 class="footer-title">Stadsmuseum Gent</h2>
+              <ul>
+                  <li>Bijlokesite</li>
+                  <li>Godshuizenlaan 2 - 9000 Gent</li>
+                  <li>09 267 14 00</li>
+                  <li>info@stamgent.be</li>
+              </ul>
+              <ul class="list-flex">
+                  <li><a href="#"><img src="../static/images/logo-vlaanderen.png" alt="Vlaanderen"></a></li>
+                  <li><a href="#"><img src="../static/images/logo-gent.png" alt="Gent"></a></li>
+              </ul>
+          </article>
 
-    <footer>
-        <div class="footer__top">
-            <a href="index.html" class="footer__logo">
-                <img src="../static/images/logo.svg" alt="STAM Logo">
-            </a>
+          <article class="footer-item container-spacing">
+              <h2 class="footer-title">mis geen nieuwtjes</h2>
+              <a class="footer-news" href="#">Schrijf je in op de nieuwsbrief</a>
+              <div class="footer-socials">
+                  <a href="../index.html"><img class="item-logo" src="../static/images/logo.svg" alt="STAM"></a>
+                  <ul class="list-flex">
+                      <li class="social-border"><a href="#"><img src="../static/images/facebook.svg"
+                                  alt="facebook logo"></a>
+                      </li>
+                      <li class="social-border"><a href="#"><img src="../static/images/twitter.svg"
+                                  alt="twitter logo"></a>
+                      </li>
+                      <li class="social-border"><a href="#"><img src="../static/images/instagram.svg"
+                                  alt="instagram logo"></a></li>
+                      <li class="social-border"><a href="#"><img src="../static/images/youtube.svg"
+                                  alt="youtube logo"></a>
+                      </li>
+                      <li class="social-border"><a href="#"><img src="../static/images/linkedin.svg"
+                                  alt="linkedin logo"></a>
+                      </li>
+                  </ul>
+              </div>
+              <ul class="list-flex">
+                  <li><a class="link-primary" href="#">Nederlands</a></li>
+                  <li><a class="link-secondary stroke" href="#">Français</a></li>
+                  <li><a class="link-secondary" href="#">English</a></li>
+              </ul>
+          </article>
+      </div>
 
-            <article class="footer__info">
-                <h2>Stadsmuseum Gent</h2>
-                <ul>
-                    <li>Bijlokesite</li>
-                    <li>Godshuizenlaan 2 - 9000 Gent</li>
-                    <li>09 267 14 00</li>
-                    <li>info@stamgent.be</li>
-                </ul>
-            </article>
-
-            <article class="footer__subscribe">
-                <h2>Mis geen nieuwtjes</h2>
-                <a href="#" class="btn btn--subscribe">Schrijf je in op de nieuwsbrief</a>
-                <div class="footer__socials">
-                    <a href="#"><img src="../static/images/facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="../static/images/twitter.svg" alt="Twitter"></a>
-                    <a href="#"><img src="../static/images/instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="../static/images/youtube.svg" alt="YouTube"></a>
-                    <a href="#"><img src="../static/images/linkedin.svg" alt="LinkedIn"></a>
-                </div>
-            </article>
-        </div>
-
-        <div class="footer__bottom">
-            <p>© STAM alle rechten voorbehouden</p>
-            <ul>
-                <li><a href="#">Privacybeleid</a></li>
-                <li><a href="#">Colofon</a></li>
-                <li><a href="#">Disclaimer</a></li>
-                <li><a href="#">Algemene voorwaarden</a></li>
-            </ul>
-        </div>
-    </footer>
-
+      <div class="footer-bottom">
+          <div class="footer-content">
+              <p class="text-white">© STAM alle rechten voorbehouden</p>
+              <ul class="footer-list">
+                  <li><a href="#">Privacybeleid</a></li>
+                  <li><a href="#">Colofon</a></li>
+                  <li><a href="#">Disclaimer</a></li>
+                  <li><a href="#">Algemene voorwaarden & bewaking</a></li>
+              </ul>
+              <div class="footer-box">
+                  <img class="footer-image" src="../static/images/heritage_logo_rotated.svg" alt="erfgoedcel">
+                  <div class="box">
+                      <p class="text-white">made by</p>
+                      <a href="https://glue.be/" target="_blank"><img class="footer-image"
+                              src="../static/images/glue.svg" alt="Glue logo"></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
     <script src="../static/js/main.js"></script>
-</body>
-
+  </body>
 </html>

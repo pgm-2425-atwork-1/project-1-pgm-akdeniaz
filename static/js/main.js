@@ -1,18 +1,18 @@
 const $hamburger = document.getElementById("hamburger");
-const $dropdown = document.getElementById("dropdown");
-const $button = document.getElementById("dropdown-button");
+const $hidden = document.getElementById("hidden");
+const $button = document.getElementById("hidden-button");
 const $main = document.getElementById("main");
-const $filler = document.getElementById("filler");
+const $filter = document.getElementById("filter");
 
 function toggleDropdown(state) {
-  $dropdown.classList.toggle("toggle", state);
-  $filler.classList.toggle("filler--toggle", state);
+  $hidden.classList.toggle("toggle", state);
+  $filter.classList.toggle("filter--toggle", state);
 }
 
 $hamburger.addEventListener("click", () => toggleDropdown());
 $button.addEventListener("click", () => toggleDropdown(false));
 $main.addEventListener("click", (event) => {
-  if (event.target !== $dropdown) toggleDropdown(false);
+  if (event.target !== $hidden) toggleDropdown(false);
 });
 
 const sidenavLinks = document.querySelectorAll(".sidenav-link a");
